@@ -26,8 +26,8 @@
     [super viewDidLoad];
     
     self.dataArray = @[
-                       @[@"copy关键字"],
-                       @[@"WZBAboutCopyViewController"]
+                       @[@"copy关键字",@"synthesize关键字",@"objc"],
+                       @[@"WZBAboutCopyViewController",@"WZBAboutSynthesizeViewController",@"WZBAboutObjcViewController"]
                        
                        ];
     // Uncomment the following line to preserve selection between presentations.
@@ -79,6 +79,7 @@
     Class cls = NSClassFromString(className);
     if (cls) {
         UIViewController *ctrl = cls.new;
+        ctrl.view.backgroundColor = [UIColor greenColor];
         ctrl.title = datasourceArray[indexPath.row];
         [self.navigationController pushViewController:ctrl animated:YES];
     }

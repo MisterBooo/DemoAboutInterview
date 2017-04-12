@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+//#import "WZBTest.h"
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
+//        WZBTest *test = [[WZBTest alloc] init];
+//        [test performSelector:@selector(iOSinit)];
+//        return 0;
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
